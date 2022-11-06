@@ -1,11 +1,15 @@
 import React from "react";
-import TestComp from "./TestComp";
 
 function App() {
     return (
         <div>
-            <TestComp />
-            <div>Hello</div>
+            <h1>My Todos</h1>
+            <div className="card">
+                <h2>TITLE</h2>
+                <div>
+                    <button className="btn">Delete</button>
+                </div>
+            </div>
         </div>
     );
 }
