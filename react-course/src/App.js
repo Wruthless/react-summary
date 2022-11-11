@@ -12,9 +12,13 @@ import NewMeetupLayout from "./pages/AllMeetupsLayout";
 import FavoritesPage from "./pages/Favorites";
 import FavoritesLayout from "./pages/FavoritesLayout";
 
+// Navigation
+import MainNavigation from "./components/layout/MainNavigation";
+
 function App() {
     return (
         <div>
+            <MainNavigation/>
             <Routes>
                 <Route>
                 <Route element={<AllMeetupsLayout/>}/>
