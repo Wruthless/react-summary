@@ -12,28 +12,26 @@ import NewMeetupLayout from "./pages/AllMeetupsLayout";
 import FavoritesPage from "./pages/Favorites";
 import FavoritesLayout from "./pages/FavoritesLayout";
 
-// Navigation
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
 
 function App() {
     return (
-        <div>
-            <MainNavigation/>
+        <Layout>
             <Routes>
                 <Route>
-                <Route element={<AllMeetupsLayout/>}/>
-                    <Route path='/' element={<AllMeetupsPage/>} />
+                    <Route element={<AllMeetupsLayout />} />
+                    <Route path="/" element={<AllMeetupsPage />} />
                 </Route>
                 <Route>
-                <Route element={<NewMeetupLayout/>}/>
-                    <Route path="/new-meetup" element={<NewMeetupPage/>} />
+                    <Route element={<NewMeetupLayout />} />
+                    <Route path="/new-meetup" element={<NewMeetupPage />} />
                 </Route>
                 <Route>
-                <Route element={<FavoritesLayout/>}/>
-                    <Route path="/favorites" element={<FavoritesPage/>}/>
+                    <Route element={<FavoritesLayout />} />
+                    <Route path="/favorites" element={<FavoritesPage />} />
                 </Route>
             </Routes>
-        </div>
+        </Layout>
     );
 }
 
