@@ -20,6 +20,8 @@ const DUMMY_DATA = [
 ];
 
 function AllMeetupsPage() {
+    fetch("https://react-getting-started-71ea1-default-rtdb.firebaseio.com/meetups.json",)
+
     return <section>
         <h1>All Meetups</h1>
         <ul>
